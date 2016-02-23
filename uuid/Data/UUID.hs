@@ -1,6 +1,7 @@
 {- |
 Module      : Data.UUID
 Copyright   : (c) 2008,2012 Antoine Latter
+Copyright   : (c) 2016 Joshua Gross
 
 License     : BSD-style
 
@@ -23,7 +24,7 @@ MAC address and current system time in "Data.UUID.V1".
 * For name-based generation of UUIDs using SHA-1 hashing see
 "Data.UUID.V5".
 -}
-module Data.UUID(UUID
+module Data.UUID(UUID(..)
                 ,toString
                 ,fromString
                 ,toText
@@ -40,8 +41,8 @@ module Data.UUID(UUID
                 ,nil
                 ) where
 
-import Prelude () -- we need to hide Prelude.null
-import Data.UUID.Types
+import           Data.UUID.Types
+import           Prelude         ()
 
 -- We use explicit re-exports of everything from Data.UUID.Types in
 -- preference to just re-exporting the whole module. This is to avoid
