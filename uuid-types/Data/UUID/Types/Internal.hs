@@ -38,10 +38,8 @@ module Data.UUID.Types.Internal
 
 import Prelude hiding (null)
 
-import Control.Applicative ((<*>))
 import Control.DeepSeq (NFData(..))
 import Control.Monad (liftM4, guard)
-import Data.Functor ((<$>))
 import Data.Char
 import Data.Bits
 import Data.Hashable

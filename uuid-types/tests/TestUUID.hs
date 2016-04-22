@@ -4,7 +4,6 @@ import qualified Data.ByteString.Lazy as BL
 import qualified Data.ByteString.Lazy.Char8 as BL8
 import qualified Data.ByteString.Char8 as BC8
 import Data.Char (ord)
-import Data.Functor ((<$>))
 import Data.Word
 import qualified Data.UUID.Types as U
 import Foreign (alloca, peek, poke)
